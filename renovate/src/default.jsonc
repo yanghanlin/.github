@@ -1,0 +1,44 @@
+{
+  // Default Renovate config
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  // Configuration based on default presets (and several other long & dull presets)
+  "extends": [
+    // https://docs.renovatebot.com/presets-config/#configbase
+    "config:base",
+    // The following grouping presets include a lot of rules, therefore not directly injected here
+    "group:recommended",
+    "group:monorepos",
+  ],
+  // Basic configuration
+  "timezone": "Asia/Shanghai",
+  "rangeStrategy": "update-lockfile",
+  // Propose changes semi-monthly
+  "schedule": [
+    "on the first day of the month",
+    "on the 15th day of the month",
+  ],
+  // Remove limits on number of PRs
+  "prHourlyLimit": 0,
+  "prConcurrentLimit": 0,
+  // Auto-merge configurations
+  "automergeType": "pr",
+  // Assignee/reviewer configurations
+  "assigneesFromCodeOwners": true,
+  "assignAutomerge": false,
+  // Specific rules
+  "packageRules": [
+    // Enable auto-merge and grouping on specific update types
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "lockFileMaintenance",
+      ],
+      "matchCurrentVersion": "!/^0\\./",
+      "groupName": "all stable and non-major dependencies",
+      "groupSlug": "all-stable-non-major",
+      "automerge": true,
+    },
+  ],
+}

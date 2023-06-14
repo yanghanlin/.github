@@ -1,0 +1,8 @@
+{
+  "name": "@hanlinyang/config-common-parent",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Common configurations",
+  "author": "Yang Hanlin <mattoncis@hotmail.com>",
+  "license": "MIT"
+}
