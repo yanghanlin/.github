@@ -22,6 +22,9 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: renovate
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -33,7 +36,9 @@ jobs:
           cache: pnpm
       - name: Install dependencies & build
         run: pnpm install && pnpm run build:full
-        working-directory: renovate
+      - name: Validate configurations
+        if: vars.RENOVATE_SKIP_VALIDATION != 'true'
+        run: pnpm run validate
       - name: Push to renovate/${{ github.ref_name }}
         uses: s0/git-publish-subdir-action@develop
         env:
