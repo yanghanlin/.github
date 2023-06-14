@@ -4,5 +4,9 @@
   "private": true,
   "description": "Common configurations",
   "author": "Yang Hanlin <mattoncis@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "pnpm@8.6.1"
 }
