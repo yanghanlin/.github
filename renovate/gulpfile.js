@@ -45,7 +45,13 @@ const validatePreset = async (file) => {
   const { isMigrated, migratedConfig } = migrateConfig(config);
   if (isMigrated) {
     log.warn(
-      `${file.path}: config migration is necessary; see https://docs.renovatebot.com/configuration-options/#configmigration`
+      `${
+        file.path
+      }: config migration is necessary; migrated config (for reference, see also https://docs.renovatebot.com/configuration-options/#configmigration):\n${JSON.stringify(
+        migratedConfig,
+        undefined,
+        2
+      )}`
     );
   }
 
