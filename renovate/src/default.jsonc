@@ -9,10 +9,9 @@
   // Basic configuration
   "timezone": "Asia/Shanghai",
   "rangeStrategy": "update-lockfile",
-  // Propose changes semi-monthly
+  // Propose changes monthly
   "schedule": [
     "on the first day of the month",
-    "on the 15th day of the month",
   ],
   // Remove limits on number of PRs
   "prHourlyLimit": 0,
