@@ -6,8 +6,7 @@
   "timezone": "Asia/Shanghai",
   "rangeStrategy": "update-lockfile",
   "schedule": [
-    "on the first day of the month",
-    "on the 15th day of the month"
+    "on the first day of the month"
   ],
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
