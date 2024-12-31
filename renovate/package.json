@@ -14,7 +14,7 @@
   "devDependencies": {
     "esm": "^3.2.25",
     "fancy-log": "^2.0.0",
-    "gulp": "^4.0.2",
+    "gulp": "^5.0.0",
     "gulp-tap": "^2.0.0",
     "jsonc-parser": "^3.2.0",
     "renovate": "^37.0.0",
