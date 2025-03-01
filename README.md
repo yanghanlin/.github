@@ -10,7 +10,7 @@ To get started, put the following contents into `.github/renovate.json` in your 
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "github>YangHanlin/.github#renovate/main"
+    "github>yanghanlin/.github#renovate/main"
   ]
 }
 ```
