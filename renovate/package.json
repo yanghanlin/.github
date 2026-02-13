@@ -17,7 +17,7 @@
     "gulp": "^5.0.0",
     "gulp-tap": "^2.0.0",
     "jsonc-parser": "^3.2.0",
-    "renovate": "^43.0.0",
+    "renovate": "^43.4.4",
     "vinyl": "^3.0.0"
   }
 }
