@@ -5,6 +5,8 @@
   "extends": [
     // https://docs.renovatebot.com/presets-config/#configrecommended
     "config:recommended",
+    // https://docs.renovatebot.com/presets-default/#enableprecommit
+    ":enablePreCommit",
   ],
   // Basic configuration
   "timezone": "Asia/Shanghai",
@@ -18,6 +20,10 @@
   "prConcurrentLimit": 0,
   // Auto-merge configurations
   "automergeType": "pr",
+  // Enable Nix manager
+  "nix": {
+    "enabled": true,
+  },
   // Lock file maintenance
   "lockFileMaintenance": {
     "enabled": true,
