@@ -11,6 +11,9 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "automergeType": "pr",
+  "lockFileMaintenance": {
+    "enabled": true
+  },
   "assigneesFromCodeOwners": true,
   "assignAutomerge": false,
   "packageRules": [
