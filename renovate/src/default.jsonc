@@ -18,6 +18,10 @@
   "prConcurrentLimit": 0,
   // Auto-merge configurations
   "automergeType": "pr",
+  // Lock file maintenance
+  "lockFileMaintenance": {
+    "enabled": true,
+  },
   // Assignee/reviewer configurations
   "assigneesFromCodeOwners": true,
   "assignAutomerge": false,
