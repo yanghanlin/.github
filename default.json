@@ -1,7 +1,8 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:recommended"
+    "config:recommended",
+    ":enablePreCommit"
   ],
   "timezone": "Asia/Shanghai",
   "rangeStrategy": "update-lockfile",
@@ -11,6 +12,9 @@
   "prHourlyLimit": 0,
   "prConcurrentLimit": 0,
   "automergeType": "pr",
+  "nix": {
+    "enabled": true
+  },
   "lockFileMaintenance": {
     "enabled": true
   },
