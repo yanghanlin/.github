@@ -23,10 +23,15 @@
   "packageRules": [
     {
       "matchUpdateTypes": [
+        "lockFileMaintenance"
+      ],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": [
         "minor",
         "patch",
-        "pin",
-        "lockFileMaintenance"
+        "pin"
       ],
       "matchCurrentVersion": "!/^0\\./",
       "groupName": "all stable and non-major dependencies",
