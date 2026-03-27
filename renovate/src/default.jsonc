@@ -33,13 +33,19 @@
   "assignAutomerge": false,
   // Specific rules
   "packageRules": [
-    // Enable auto-merge and grouping on specific update types
+    // Auto-merge lock file maintenance without version constraint
+    {
+      "matchUpdateTypes": [
+        "lockFileMaintenance",
+      ],
+      "automerge": true,
+    },
+    // Enable auto-merge and grouping on stable dependency updates
     {
       "matchUpdateTypes": [
         "minor",
         "patch",
         "pin",
-        "lockFileMaintenance",
       ],
       "matchCurrentVersion": "!/^0\\./",
       "groupName": "all stable and non-major dependencies",
